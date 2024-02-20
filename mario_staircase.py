@@ -1,4 +1,4 @@
-from mario-helper import staircase_generate
+from mario_helper import staircase_generate
 
 step_count = int(input("Stair count: "))
 output_filename = input("Output file's name: ")
