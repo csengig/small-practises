@@ -1,0 +1,15 @@
+def staircase_generate(steps):
+    staircaselist = []
+    wh_counter = steps - 1
+    hashtag_counter = 1
+
+    for line in range(steps):
+        staircaselist.append(stair_generate(wh_counter, hashtag_counter))
+        wh_counter -= 1
+        hashtag_counter += 1
+    return staircaselist
+
+def stair_generate(whcount, hashcount):
+    whitespace = " "
+    hashtag = "#"
+    return whitespace*whcount + hashtag*hashcount + whitespace + hashtag*hashcount
